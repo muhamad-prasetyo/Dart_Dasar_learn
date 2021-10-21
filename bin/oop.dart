@@ -3,7 +3,7 @@ import 'dart:io';
 void main() {
   PersegiPanjang kotak1, kotak2;
 
-  kotak1 = new PersegiPanjang();
+  kotak1 = PersegiPanjang();
   kotak1.panjang = 3;
   kotak1.lebar = 2;
 
@@ -21,6 +21,6 @@ class PersegiPanjang {
   double lebar;
 
   double hitungLuas() {
-    return this.panjang * this.lebar;
+    return panjang * lebar;
   }
 }
